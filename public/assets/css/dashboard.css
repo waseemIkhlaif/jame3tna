@@ -1,0 +1,162 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+}
+
+:root {
+    --mainColor: white;
+    --SecondColor: #0fb78d;
+    --fontColor: #012738;
+    --hoverColor: #d8b25a;
+}
+
+.container {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--SecondColor);
+    overflow: hidden;
+}
+header .container .tittle{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 18.15px;
+}
+.actions{
+    width: 100%;
+}
+.actions .action_menu{
+    width: 25%;
+    height: auto;
+    float: left;
+    border-right: 1px solid var(--SecondColor);
+    border-bottom: 1px solid var(--SecondColor);
+
+}
+.actions .action_menu h1{
+    text-align: center;
+    background-color: var(--fontColor);
+    color: #fff;
+    font-size: 20px;
+    margin: 0px;
+    padding: 16.750px 0px 16.750px 0px;
+}
+.actions .action_menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.actions .action_menu ul li, .logout{
+    height: 50px;
+    background-color: var(--SecondColor);
+    border-bottom: 1px solid rgba(20, 48, 58,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+}
+.actions .action_menu ul li a, .logout{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+}
+.logout{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.logout:hover{
+    background-color: var(--fontColor);
+}
+.actions .action_menu ul li:hover{
+    background-color: var(--fontColor);
+}
+.actions .container .action_information{
+    width: 70%;
+    margin-left: 5%;
+    height: auto;
+    float: left;
+}
+.actions .container .action_information h1{
+    color: var(--fontColor);
+    font-family: sans-serif;
+}
+.actions .container .action_information p{
+    color: var(--fontColor);
+    font-family: sans-serif;
+    width: 600px;
+}
+.actions .container .action_information h2{
+    color: var(--fontColor);
+    font-family: sans-serif;
+}
+.actions .container .action_information input{
+    padding: 12px;
+    width: 42%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(207, 181, 120,0.5);
+}
+.actions .container .action_information input:focus{
+    border: 1px solid var(--SecondColor);
+    outline: none;
+}
+.actions .container .action_information .addrentalB{
+    background-color: var(--SecondColor);
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+.actions .container .action_information .addrentalB:hover{
+    background-color: var(--fontColor);
+}
+.Add_Renteal, .Remove_Rental, .Add_Car, .Remove_Car,
+.Add_User, .Remove_User{
+    display: none;
+}
+.orders{
+    width: 30%;
+    height: auto;
+    border: 1px solid #0fb78d;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px;
+}
+.orders .adminAction{
+    background-color: #0fb78d;
+    color: #012738;
+    cursor: pointer;
+    width: 100%!important;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+.orders .adminAction:hover{
+    background-color: #012738;
+    color: #fff;
+}
